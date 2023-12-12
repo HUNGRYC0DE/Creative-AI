@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: SpaceGrotesk-Bold;
+  src: url("./font/SpaceGrotesk-Bold.otf");
+}
+
+body {
+  background-color: black;
+  height: 100%;
+  font: bold;
+  color: white;
+  font-family: SpaceGrotesk-Bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+}
+
+.menu-btn {
+  padding: 8px;
+  margin: 0 18px;
+  background-color: transparent;
+  color: aliceblue;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.menu-btn:hover {
+  transform: scale(50px);
+  color: #e6f85e;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  padding: 0;
+  list-style-type: none;
+  background-color: #000000;
+  min-width: 200px;
+  width: fit-content;
+  z-index: 1;
+  left: -0px;
+  top: 50px;
+  text-align: start;
+  border: solid 1px rgba(133, 131, 131, 0.479);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#Home:hover .dropdown {
+  display: grid;
+}
+.line-clamp-none {
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+  width: 400px;
+}
+.dropdown li {
+  color: black;
+  display: block;
+  margin: 0px 20px;
+  color: white;
+  padding: 5px 0px;
+  transition: all 0.4s ease-in-out;
+}
+.dropdown a {
+  text-decoration: transparent none;
+  color: rgba(177, 175, 175, 0.767);
+  font-size: 16px;
+}
+.dropdown li:hover {
+  transform: translate(15px, 0px);
+  a {
+    color: #e6f85e;
+  }
+}
+
+.Typewriter__wrapper {
+  font: bold;
+  font-size: 50px;
+  color: transparent;
+  background: linear-gradient(90.22deg, #58ebff 0.19%, #e6f85e 101.84%);
+  background-clip: text;
+}
+.Typewriter__cursor {
+  color: white;
+}
+
