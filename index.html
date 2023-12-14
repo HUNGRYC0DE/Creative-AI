@@ -8,11 +8,14 @@
   </head>
 
   <body>
-    <div class="w-full max-h-[87px] py-[16px] flex items-center justify-evenly">
+    <!-- Header -->
+    <header
+      class="max-h-[87px] py-[16px] flex items-center justify-between w-3/4"
+    >
       <a href=""><img class="w-[165px]" src="./media/logo.svg" alt="" /></a>
       <div class="flex">
         <button id="Home" class="menu-btn relative inline-block">
-          Home &#9662;
+          Home &#8964;
           <ul class="dropdown">
             <li><a href="#">Home one</a></li>
             <li><a href="#">Home one lite </a></li>
@@ -21,7 +24,7 @@
           </ul>
         </button>
         <button id="Home" class="menu-btn relative inline-block">
-          Pages &#9662;
+          Pages &#8964;
           <ul class="dropdown line-clamp-none">
             <li><a href="#">About</a></li>
             <li><a href="#">About lite </a></li>
@@ -58,10 +61,11 @@
           Get Started
         </button>
       </div>
-    </div>
-
+    </header>
+    <!-- Header -->
+    <!-- Main -->
     <div
-      class="flex flex-col justify-center items-center text-[40px] mt-[50px] w-[80%]"
+      class="flex flex-col justify-center items-center text-[40px] mt-[50px] w-3/4"
     >
       <div class="live-bg"></div>
       <p class="text-[#e6f85e] text-[16px] mb-[16px]">
@@ -78,37 +82,34 @@
       >
         Start Writing - It's Free
       </button>
-      <div
-        class="w-full flex items-center justify-center mt-[48px] min-w-[800px]"
-      >
+      <div class="flex items-center justify-center mt-[48px]">
         <img
-          class="w-[65%] border border-[#e6f85e] rounded-3xl"
+          class="border border-[#e6f85e] rounded-3xl w-4/5"
           src="./media/screen-1.jpg"
           alt=""
         />
       </div>
-      <ul class="flex text-[16px] w-full justify-center gap-12 mt-8">
+      <ul class="flex text-[16px] justify-center gap-16 mt-8 list-disc list-inside">
         <li>Write Blogs 10X Faster</li>
         <li>Write Higher Converting Posts</li>
         <li>Write More Engaging Emails</li>
       </ul>
-      <div class="flex w-full justify-center gap-12 mt-12 mb-16">
+      <div class="flex justify-center gap-12 mt-12 mb-16">
         <img class="h-10" src="./media/trustpilot_reviews.svg" alt="" />
 
         <img class="h-10" src="./media/capterra_reviews.svg" alt="" />
       </div>
       <div class="mt-14 flex flex-col justify-center items-center">
-        <p class="text-5xl text-center justify-center m-0 max-w-[900px]">
-          Generate Creative AI Copy On-The-Spot, Across Your Favorite Tools
+        <p class="text-5xl text-center justify-center m-0 flex flex-col">
+          <span>Generate Creative AI Copy On-The-Spot,</span>
+          <span>Across Your Favorite Tools</span>
         </p>
-        <div class="flex flex-row text-2xl gap-12 mt-24">
-          <div class="flex justify-center gap-6 w-1/3">
+        <div class="flex flex-row text-2xl gap-10 mt-24">
+          <div class="flex justify-center gap-6">
             <img
               class="h-14 p-2 bg-[#3d3d3d7c] border border-stone-700 rounded-lg"
               src="./media/icone1.svg"
-              alt=""
-            />
-
+              alt=""/>
             <p class="flex flex-col gap-5 m-0">
               <span> Generates quality contents </span>
               <span style="font-size: 14px">
@@ -118,13 +119,11 @@
               </span>
             </p>
           </div>
-          <div class="flex justify-center gap-6 w-1/3">
+          <div class="flex justify-center gap-6">
             <img
               class="h-14 p-2 bg-[#3d3d3d7c] border border-stone-700 rounded-lg"
               src="./media/icone2.svg"
-              alt=""
-            />
-
+              alt=""/>
             <p class="flex flex-col gap-4 m-0">
               <span>Provides Useful Suggestions</span>
               <span style="font-size: 14px">
@@ -133,7 +132,7 @@
               </span>
             </p>
           </div>
-          <div class="flex justify-center gap-6 w-1/3">
+          <div class="flex justify-center gap-6">
             <img
               class="h-14 p-2 bg-[#3d3d3d7c] border border-stone-700 rounded-lg"
               src="./media/icone3.svg"
@@ -154,7 +153,366 @@
           Try a demo
         </button>
       </div>
+      <!--Features-->
+      <div class="flex items-center">
+        <div class="w-1/2">
+          <p class="text-[#ebf97e] text-base mb-4">Features 1</p>
+          <p class="text-5xl mb-8">
+            Let's Create AI-Powered Content With A Single Click.
+          </p>
+          <p class="text-base mb-6">
+            To create powerful content, you need to know who you're targeting.
+            Identify your target audience and understand their needs, interests,
+            and pain points.
+          </p>
+          <ul class="text-base mb-8 list-disc list-inside">
+            <li>Start creating powerful content, for your next ads</li>
+            <li class="my-3">
+              Let's Communicate with your customers with emotions
+            </li>
+            <li>
+              Use visuals like images, videos, or infographics to make your
+              content more engaging
+            </li>
+          </ul>
+          <button class="text-base cursor-pointer Features-button transition-all duration-700 ease-in-out">
+            Get Started Free <span class="ml-4">&#8599;</span>
+            <hr class="w-0 transition-all duration-700 ease-in-out" />
+          </button>
+        </div>
+        <img
+          class="w-1/2"
+          src="./media/feature-illustration-1-dark.svg"
+          alt=""
+        />
+      </div>
+      <!--Features 2-->
+      <div class="flex items-center">
+        <img
+          class="w-1/2"
+          src="./media/feature-illustration-2-dark.svg"
+          alt=""
+        />
+        <div class="w-1/2">
+          <p class="text-[#ebf97e] text-base mb-4">Features 2</p>
+          <p class="text-5xl mb-8">
+            A Magical Tool To Optimize Your Content For First Page Rankings
+          </p>
+          <p class="text-base mb-6">
+            A Magical Tool to Optimize you content for the first know who you're
+            targeting. Identify your target audience and understand their needs,
+            interests, and pain points..
+          </p>
+          <button class="text-base cursor-pointer Features-button transition-all duration-700 ease-in-out">
+            Request A Demo <span class="ml-4">&#8599;</span>
+            <hr class="w-0 transition-all duration-700 ease-in-out" />
+          </button>
+        </div>
+        <!--Features 3-->
+      </div>
+      <div class="flex items-center">
+        <div class="w-1/2">
+          <p class="text-[#ebf97e] text-base mb-4">Features 3</p>
+          <p class="text-5xl mb-8">
+            Write Blog Posts, Stories, & Even Books With
+            <span class="text-[#ebf97e]">GenAI</span>.
+          </p>
+          <p class="text-base mb-6">
+            To create powerful content, you need to know who you're targeting.
+            Identify your target audience and understand their needs, interests,
+            and pain points..
+          </p>
+          <ul class="text-base mb-8 list-disc list-inside">
+            <li>Start creating powerful content, for your next ads</li>
+            <li class="my-3">
+              Let's Communicate with your customers with emotions
+            </li>
+            <li>
+              Use visuals like images, videos, or infographics to make your
+              content more engaging
+            </li>
+          </ul>
+          <button class="text-base cursor-pointer Features-button transition-all duration-700 ease-in-out">
+            Get Started Free <span class="ml-4">&#8599;</span>
+            <hr class="w-0 transition-all duration-700 ease-in-out" />
+          </button>
+        </div>
+        <img
+          class="w-1/2"
+          src="./media/feature-illustration-3-dark.svg"
+          alt=""
+        />
+      </div>
+      <!--Features-->
     </div>
+    <!--GenAI Use Cases-->
+    <div class="flex flex-col justify-center items-center bg-[#171822] pt-36 pb-28 bg-[url('/media/stripe-dark.svg')] bg-no-repeat bg-[center_bottom_15px]">
+      <p class="text-lg text-[#ebf97e] mb-4">GenAI Use Cases</p>
+      <p class="text-5xl max-w-3xl text-center">
+        Write Better Content Faster, The Future Of AI Writing Tools is Here
+      </p>
+      <div class="mt-10 grid grid-cols-4 gap-10 w-4/5 ">
+        <div class="flex flex-col justify-center gap-6">
+          <img
+            class="h-14 w-14 p-2 bg-[#3d3d3d7c] border border-stone-700 rounded-lg"
+            src="./media/icone3.svg"
+            alt=""
+          />
+          <p class="flex flex-col gap-4 m-0 text-xl">
+            <span> Writing Blog Content </span>
+            <span class="text-sm">
+              Writing blog content with GenAI, make sure you have a clear
+              understanding of who your audience is.
+            </span>
+          </p>
+          <button class="text-base cursor-pointer Features-button w-fit text-[#747694] transition-all duration-700 ease-in-out">
+            Try Blog Content
+            <span class="ml-4">&#8599;</span>
+            <hr class="w-0 transition-all duration-700 ease-in-out" />
+          </button>
+        </div>
+        <div class="flex flex-col justify-center gap-6">
+          <img
+            class="h-14 w-14 p-2 bg-[#3d3d3d7c] border border-stone-700 rounded-lg"
+            src="./media/icone3.svg"
+            alt=""
+          />
+          <p class="flex flex-col gap-4 m-0 text-xl">
+            <span>Digital Ad Copy</span>
+            <span class="text-sm">
+              A Magical Tool to Optimize you content for the first know who you're targeting. Identify your target.
+            </span>
+          </p>
+          <button class="text-base cursor-pointer Features-button w-fit text-[#747694] transition-all duration-700 ease-in-out">
+            Try Digital Ad
+            <span class="ml-4">&#8599;</span>
+            <hr class="w-0 transition-all duration-700 ease-in-out" />
+          </button>
+        </div>
+        <div class="flex flex-col justify-center gap-6">
+          <img
+            class="h-14 w-14 p-2 bg-[#3d3d3d7c] border border-stone-700 rounded-lg"
+            src="./media/icone3.svg"
+            alt=""
+          />
+          <p class="flex flex-col gap-4 m-0 text-xl">
+            <span>Website Copy</span>
+            <span class="text-sm">
+              Optimize you content for the first know who you're targeting. Identify your target audience.
+            </span>
+          </p>
+          <button class="text-base cursor-pointer Features-button w-fit text-[#747694] transition-all duration-700 ease-in-out">
+            Try Website Copy
+            <span class="ml-4">&#8599;</span>
+            <hr class="w-0 transition-all duration-700 ease-in-out" />
+          </button>
+        </div>
+        <div class="flex flex-col justify-center gap-6">
+          <img
+            class="h-14 w-14 p-2 bg-[#3d3d3d7c] border border-stone-700 rounded-lg"
+            src="./media/icone3.svg"
+            alt=""
+          />
+          <p class="flex flex-col gap-4 m-0 text-xl">
+            <span>Social Media Content</span>
+            <span class="text-sm">
+              First know who you're targeting. Identify your target audience and understand their needs.
+            </span>
+          </p>
+          <button class="text-base cursor-pointer Features-button w-fit text-[#747694] transition-all duration-700 ease-in-out">
+            Try Social Media Content
+            <span class="ml-4">&#8599;</span>
+            <hr class="w-0 transition-all duration-700 ease-in-out" />
+          </button>
+        </div>
+        <div class="flex flex-col justify-center gap-6">
+          <img
+            class="h-14 w-14 p-2 bg-[#3d3d3d7c] border border-stone-700 rounded-lg"
+            src="./media/icone3.svg"
+            alt=""
+          />
+          <p class="flex flex-col gap-4 m-0 text-xl">
+            <span>Landing Page Copy</span>
+            <span class="text-sm">
+              First know who you're targeting. Identify your target audience and understand their needs.
+            </span>
+          </p>
+          <button class="text-base cursor-pointer Features-button w-fit text-[#747694] transition-all duration-700 ease-in-out">
+            Try Landing Page Copy
+            <span class="ml-4">&#8599;</span>
+            <hr class="w-0 transition-all duration-700 ease-in-out" />
+          </button>
+        </div>
+        <div class="flex flex-col justify-center gap-6">
+          <img
+            class="h-14 w-14 p-2 bg-[#3d3d3d7c] border border-stone-700 rounded-lg"
+            src="./media/icone3.svg"
+            alt=""
+          />
+          <p class="flex flex-col gap-4 m-0 text-xl">
+            <span>Marketing Copy</span>
+            <span class="text-sm">
+              A Magical Tool to Optimize you content for the first know who you're targeting. Identify your target.
+            </span>
+          </p>
+          <button class="text-base cursor-pointer Features-button w-fit text-[#747694] transition-all duration-700 ease-in-out">
+            Try Marketing Copy
+            <span class="ml-4">&#8599;</span>
+            <hr class="w-0 transition-all duration-700 ease-in-out" />
+          </button>
+        </div>
+        <div class="flex flex-col justify-center gap-6">
+          <img
+            class="h-14 w-14 p-2 bg-[#3d3d3d7c] border border-stone-700 rounded-lg"
+            src="./media/icone3.svg"
+            alt=""
+          />
+          <p class="flex flex-col gap-4 m-0 text-xl">
+            <span>eCommerce Copy</span>
+            <span class="text-sm">
+              Writing blog content with GenAI, make sure you have a clear understanding of who your audience is.
+            </span>
+          </p>
+          <button class="text-base cursor-pointer Features-button w-fit text-[#747694] transition-all duration-700 ease-in-out">
+            Try eCommerce Copy
+            <span class="ml-4">&#8599;</span>
+            <hr class="w-0 transition-all duration-700 ease-in-out" />
+          </button>
+        </div>
+        <div class="flex flex-col justify-center gap-6">
+          <img
+            class="h-14 w-14 p-2 bg-[#3d3d3d7c] border border-stone-700 rounded-lg"
+            src="./media/icone3.svg"
+            alt=""
+          />
+          <p class="flex flex-col gap-4 m-0 text-xl">
+            <span>Product Description</span>
+            <span class="text-sm">
+              Optimize you content for the first know who you're targeting. Identify your target audience.
+          </p>
+          <button class="text-base cursor-pointer Features-button w-fit text-[#747694] transition-all duration-700 ease-in-out">
+            Try Product Description
+            <span class="ml-4">&#8599;</span>
+            <hr class="w-0 transition-all duration-700 ease-in-out" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--GenAI Use Cases-->
+    <!--GenAI.-->
+    <div class="flex mt-28 mb-14">
+      <h1 class="text-center flex flex-wrap text-5xl max-w-[676px] flex-none">
+        <span class="text-[#ebf97e] max-h-[72px]">GenAI.</span> Received 
+        <img class="h-[50px]" src="./media/star.png" alt=""> 
+        <span class="flex-none">4.8/5 Stars in Over 10,000+ Reviews.</span>  
+      </h1>
+    </div>
+    <!--GenAI.-->
+    <!--Pricing Plan-->
+    <div class="flex flex-col items-center justify-center mt-16 mx-10 w-2/3">
+      <p class="text-base mb-4">Pricing Plan</p>
+      <p class="text-5xl mb-5 flex flex-col items-center justify-center">
+      <span>Ready to Get Started?</span>
+      <span>Don't Worry, We'll Keep You Under Budget</span>
+      </p>
+      <p class="text-base">Get started with a 5-day trial, Cancel anytime.</p>
+      <div class="my-16 flex gap-8">
+        <div class="border border-[#c3d1e3] py-8 px-10 rounded-lg hover:border-[#ebf97e] transition-all ease-in-out duration-400 Plan-button w-1/3 h-[688px]">
+          <p class="text-[#e6f85e] text-3xl">Free</p>
+          <p class="mt-4 text-7xl ">$00</p>
+          <p class="text-xl mt-4">A 10X faster way to writing your professional copy</p>
+          <div class="flex justify-center mt-8"><button class="py-4 px-8 bg-[#191a28] text-2xl rounded-lg w-11/12 transition-all duration-700 ease-in-out">Start for Free</button></div>
+          <ul class="list-disc list-inside flex flex-col gap-5 text-lg my-8">
+            <li>Single seats</li>
+            <li>10,000 words per month</li>
+            <li>30+ AI writing tools</li>
+            <li>60+ Copywriting tools</li>
+            <li>10+ languages</li>
+          </ul>
+        </div>
+        <div class="border border-[#c3d1e3] py-8 px-10 rounded-lg hover:border-[#ebf97e] transition-all ease-in-out duration-400 Plan-button w-1/3 h-[688px]">
+          <p class="text-[#e6f85e] text-3xl">Starter</p>
+          <p class="mt-4 text-7xl ">$29</p>
+          <p class="text-xl mt-4">A 10X faster way to writing your professional copy</p>
+          <div class="flex justify-center mt-8"><button class="py-4 px-8 bg-[#191a28] text-2xl rounded-lg w-11/12 transition-all duration-700 ease-in-out">Choose Plan</button></div>
+          <ul class="list-disc list-inside flex flex-col gap-5 text-lg my-8">
+            <li>5 User seats</li>
+            <li><span class="font-bold">50,000</span> words per month</li>
+            <li><span class="font-bold">+70</span> AI writing tools</li>
+            <li><span class="font-bold">+100</span> Copywriting tools</li>
+            <li>Blog post wizard tool</li>
+            <li>25+ languages</li>
+          </ul>
+        </div>
+        <div class="border border-[#c3d1e3] py-8 px-10 rounded-lg hover:border-[#ebf97e] transition-all ease-in-out duration-400 Plan-button w-1/3 h-[688px]">
+          <p class="text-[#e6f85e] text-3xl">Enterprise</p>
+          <p class="mt-4 text-7xl ">$119</p>
+          <p class="text-xl mt-4">A 10X faster way to writing your professional copy</p>
+          <div class="flex justify-center mt-8"><button class="py-4 px-8 bg-[#191a28] text-2xl rounded-lg w-11/12 transition-all duration-700 ease-in-out">Choose Plan</button></div>
+          <ul class="list-disc list-inside flex flex-col gap-5 text-lg my-8">
+            <li>Unlimited seats</li>
+            <li><span class="font-bold"> 100,000 </span> words per month</li>
+            <li><span class="font-bold"> +100 </span> AI writing tools</li>
+            <li><span class="font-bold"> 200+ </span> Copywriting tools</li>
+            <li>Blog post wizard tool</li>
+            <li>25+ languages</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Pricing Plan-->
+    <!--Questions & About-->
+    <div>
+
+    </div>
+    <!--Questions & About-->
+    <!--footer-->
+    <footer class="flex flex-col justify-center items-center pt-20 bg-[url('/media/stripe-dark-footer.svg')] bg-no-repeat bg-center ">
+      <div class="w-[65%] grid grid-cols-5 justify-center">
+        <div class="col-span-2 mr-32">
+          <img class="w-[135px]" src="./media/logo.svg" alt="">
+          <p class="mt-6">A Magical Tool to Optimize you content for the first know who you're targeting. Identify your target audience.</p>
+        </div>
+        <div>
+          <p>Gen AI</p>
+          <ul class="gap-1 flex flex-col mt-2">
+            <li class="p-1 hover:text-[#e6f85e] cursor-pointer w-fit transition-all duration-500 ease-in-out hover:translate-x-3">About</li>
+            <li class="p-1 hover:text-[#e6f85e] cursor-pointer w-fit transition-all duration-500 ease-in-out hover:translate-x-3">Blog</li>
+            <li class="p-1 hover:text-[#e6f85e] cursor-pointer w-fit transition-all duration-500 ease-in-out hover:translate-x-3">Sign in</li>
+            <li class="p-1 hover:text-[#e6f85e] cursor-pointer w-fit transition-all duration-500 ease-in-out hover:translate-x-3">Register</li>
+            <li class="p-1 hover:text-[#e6f85e] cursor-pointer w-fit transition-all duration-500 ease-in-out hover:translate-x-3">Contact</li>
+          </ul>
+        </div>
+        <div>
+          <p>Use Cases</p>
+          <ul class="gap-1 flex flex-col mt-2">
+            <li class="p-1 hover:text-[#e6f85e] cursor-pointer w-fit transition-all duration-500 ease-in-out hover:translate-x-3">AI writer</li>
+            <li class="p-1 hover:text-[#e6f85e] cursor-pointer w-fit transition-all duration-500 ease-in-out hover:translate-x-3">Businesses AI</li>
+            <li class="p-1 hover:text-[#e6f85e] cursor-pointer w-fit transition-all duration-500 ease-in-out hover:translate-x-3">AI Blog writer</li>
+            <li class="p-1 hover:text-[#e6f85e] cursor-pointer w-fit transition-all duration-500 ease-in-out hover:translate-x-3">AI Content Creator</li>
+            <li class="p-1 hover:text-[#e6f85e] cursor-pointer w-fit transition-all duration-500 ease-in-out hover:translate-x-3">Article write</li>
+          </ul>
+        </div>
+        <div class="w-fit">
+          <p>News & Update</p>
+          <div class="h-14 border border-[#c3d1e3] rounded-2xl flex w-fit mt-8 relative overflow-x-hidden">
+            <input placeholder="Enter Your email" class="bg-transparent px-3 py-5 outline-none" type="text">
+            <button class="cursor-pointer bg-[#e6f85e] px-6 ">
+              <img class="min-w-[24px] min-h-[24px]" src="./media/send.svg" alt="">
+            </button>
+          </div>
+          <div class="flex justify-around w-full mt-4">
+            <img class="w-[24px] cursor-pointer " src="./media/ss/github.svg" alt="">
+            <img class="w-[24px] cursor-pointer" src="./media/ss/internet.svg" alt="">
+            <img class="w-[24px] cursor-pointer" src="./media/ss/facebook.svg" alt="">
+            <img class="w-[24px] cursor-pointer" src="./media/ss/twitter.svg" alt="">
+            <img class="w-[24px] cursor-pointer" src="./media/ss/insta.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <p class="mt-8 py-6">Copyright <span class="text-[#e6f85e]">GenAI.</span> Design By Marvel_Theme</p>
+    </footer>
+    <!--footer-->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script>
       var app = document.getElementById("typewriter");

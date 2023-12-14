@@ -3,20 +3,18 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: SpaceGrotesk-Bold;
-  src: url("./font/SpaceGrotesk-Bold.otf");
+  font-family: "ss";
+  src: url("./font/SpaceGrotesk.ttf") format("truetype");
 }
 
 body {
-  background-color: black;
-  height: 100%;
-  font: bold;
+  background-color: #11121c;
   color: white;
-  font-family: SpaceGrotesk-Bold;
+  font-family: "Ss";
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 0px;
 }
 
 .menu-btn {
@@ -89,4 +87,22 @@ body {
 .Typewriter__cursor {
   color: white;
 }
-
+.Features-button:hover {
+  transition: all ease-in-out 0.7s;
+  color: #e6f85e;
+  hr {
+    width: 100%;
+  }
+}
+.Plan-button span{
+  transition: all ease-in-out 0.7s;
+}
+.Plan-button:hover{
+  button{ 
+    background-color: #e6f85e;
+    color: #000000;
+  };
+  span{
+    color: #e6f85e;
+  }
+}
