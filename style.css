@@ -106,3 +106,16 @@ body {
     color: #e6f85e;
   }
 }
+
+
+.show-button:focus{
+  .show{
+  display: flex;
+  }
+  hr{
+    
+  }
+  div p{
+    transform: rotate(45deg);
+  }
+}
