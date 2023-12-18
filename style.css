@@ -6,6 +6,16 @@
   font-family: "ss";
   src: url("./font/SpaceGrotesk.ttf") format("truetype");
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 body {
   background-color: #11121c;
@@ -79,6 +89,7 @@ body {
 
 .Typewriter__wrapper {
   font: bold;
+  text-align: center;
   font-size: 50px;
   color: transparent;
   background: linear-gradient(90.22deg, #58ebff 0.19%, #e6f85e 101.84%);
@@ -113,9 +124,18 @@ body {
   display: flex;
   }
   hr{
-    
+    border-color: #e6f85e;
   }
   div p{
     transform: rotate(45deg);
+    font: bold;
+  }
+  .hr-buttom{
+    transform: rotate(-45deg);
+    TOP: 50%;
+  }
+  .hr-top{
+    transform: rotate(45deg);
+    top: 50%;
   }
 }

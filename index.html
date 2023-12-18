@@ -62,17 +62,51 @@
         </button>
       </div>
       <div class="flex lg:hidden overflow-visible">
-        <button class="text-white text-4xl cursor-pointer show-button w-fit">X
-          <div class="show hidden absolute text-base z-10 top-16 h-fit cursor-default w-full right-0 bg-[#11121c] flex-col p-10 pt-5 shadow-lg shadow-slate-800">
+        <button class="text-white text-4xl cursor-pointer show-button w-fit">
+          <div onclick="closseNav(event)" class="w-10 h-10 relative">
+            <hr class="w-full border absolute top-3 hr-top transition-all duration-500 ease-in-out">
+            <hr class="w-full border absolute bottom-3 hr-buttom transition-all duration-500 ease-in-out">
+          </div>
+          <div class="show absolute hidden no-scrollbar w-[60%] max-md:w-full max-md:left-0 max-h-[500px] mt-4
+            text-base z-10 top-16 h-fit cursor-default bg-[#11121c] left-[20%] flex-col p-10 pt-5 shadow-lg shadow-slate-800 overflow-y-scroll">
             <ul class="w-full h-fit text-start flex flex-col gap-3">
-              <li class="w-full relative">
+              <li onclick="(showLi(event))" class="relative w-full max-w-[280px]">
                   Home &#8964;
-                  <div class="show hidden">
-                    <ul class="flex-col border border-[#e6f85e] gap-3 p-4 w-1/2 rounded-xl mt-3">
+                  <div id="ss" class="hidden w-full">
+                    <ul class="flex-col border border-[#e6f85e] gap-5 p-2 pl-5 rounded-xl mt-3 w-full">
                       <li><a href="#">Home one</a></li>
                       <li><a href="#">Home one lite </a></li>
                       <li><a href="#">Home two</a></li>
                       <li><a href="#">Home two lite</a></li>
+                    </ul>
+                  </div>
+              </li>
+              <li onclick="(showLi(event))" class="w-full relative max-w-[280px]">
+                Pages &#8964;
+                  <div id="ss" class="hidden w-full">
+                    <ul class="flex-col border border-[#e6f85e] gap-5 p-2 pl-5  rounded-xl mt-3 w-full">
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">About lite </a></li>
+                      <li><a href="#">Contact </a></li>
+                      <li><a href="#">Contact lite </a></li>
+                      <li><a href="#">Blog </a></li>
+                      <li><a href="#">Blog lite </a></li>
+                      <li><a href="#">Article </a></li>
+                      <li><a href="#">Article lite </a></li>
+                      <li><a href="#">Use cases </a></li>
+                      <li><a href="#">Use cases lite </a></li>
+                      <li><a href="#">Case details </a></li>
+                      <li><a href="#">Case details lite </a></li>
+                      <li><a href="#">Pricing </a></li>
+                      <li><a href="#">Pricing lite </a></li>
+                      <li><a href="#">Login </a></li>
+                      <li><a href="#">Login lite </a></li>
+                      <li><a href="#">Register </a></li>
+                      <li><a href="#">Register lite </a></li>
+                      <li><a href="#">Forgot password </a></li>
+                      <li><a href="#">Forgot password lite </a></li>
+                      <li><a href="#">404 </a></li>
+                      <li><a href="#">404 lite </a></li>
                     </ul>
                   </div>
               </li>
@@ -494,14 +528,14 @@
         We have Answers!</p>
         <div class="my-10 w-full">
           <button class="hover:text-[#e6f85e] show-button text-2xl text-left w-full focus:text-[#e6f85e] inline my-5">
-            <div class="w-fit flex justify-self-center items-center"> <p class="text-3xl mr-5">+</p>What Is GenAI Content Writing Tool?</div>
+            <div class="w-fit flex justify-self-center items-center"> <p class="text-3xl mr-5 transition-all duration-500 ease-in-out">+</p>What Is GenAI Content Writing Tool?</div>
           <hr class="w-full mt-5">
             <p class="text-white hover:text-white text-lg show hidden cursor-default my-5">
               Once you know your audience, choose a topic that will resonate with them. Look for trending topics in your industry or address common questions or challenges your audience may be facing. Keep in mind that your topic should be both interesting and relevant to your audience
             </p>
         </button>
           <button class="hover:text-[#e6f85e] show-button text-2xl text-left w-full focus:text-[#e6f85e] inline my-5">
-            <div class="w-fit flex justify-self-center items-center"> <p class="text-3xl mr-5">+</p>
+            <div class="w-fit flex justify-self-center items-center"> <p class="text-3xl mr-5 transition-all duration-500 ease-in-out">+</p>
               Is it helpful for Digital Marketer or Content Writer?
             </div>
           <hr class="w-full mt-5">
@@ -510,7 +544,7 @@
             </p>
         </button>
           <button class="hover:text-[#e6f85e] show-button text-2xl text-left w-full focus:text-[#e6f85e] inline my-5">
-            <div class="w-fit flex justify-self-center items-center"> <p class="text-3xl mr-5">+</p>
+            <div class="w-fit flex justify-self-center items-center"> <p class="text-3xl mr-5 transition-all duration-500 ease-in-out">+</p>
               Is there a limit on how much content I can generate?
             </div>
           <hr class="w-full mt-5">
@@ -519,7 +553,7 @@
             </p>
         </button>
           <button class="hover:text-[#e6f85e] show-button text-2xl text-left w-full focus:text-[#e6f85e] inline my-5">
-            <div class="w-fit flex justify-self-center items-center"> <p class="text-3xl mr-5">+</p>
+            <div class="w-fit flex justify-self-center items-center"> <p class="text-3xl mr-5 transition-all duration-500 ease-in-out">+</p>
               What Languages does it supports?
             </div>
           <hr class="w-full mt-5">
@@ -528,11 +562,11 @@
             </p>
         </button>
           <button class="hover:text-[#e6f85e] show-button text-2xl text-left w-full focus:text-[#e6f85e] inline my-5">
-            <div class="w-fit flex justify-self-center items-center"> <p class="text-3xl mr-5">+</p>
+            <div class="w-fit flex justify-self-center items-center"> <p class="text-3xl mr-5 transition-all duration-500 ease-in-out">+</p>
               What is SEO Writing AI and how do I use it?
             </div>
           <hr class="w-full mt-5">
-            <p class="text-white hover:text-white text-lg show hidden cursor-default my-5">
+            <p class="text-white hover:text-white text-lg show hidden cursor-default my-5 transition-all duration-500 ease-in-out">
               Once you know your audience, choose a topic that will resonate with them. Look for trending topics in your industry or address common questions or challenges your audience may be facing. Keep in mind that your topic should be both interesting and relevant to your audience
             </p>
         </button>
